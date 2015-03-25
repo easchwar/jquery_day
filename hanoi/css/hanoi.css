@@ -1,0 +1,61 @@
+body {
+background: #000;
+font-family: 'Share Tech Mono';
+color: yellowgreen;
+}
+
+.title {
+text-align: center;
+}
+
+.hanoi {
+  margin: 50px auto;
+  height: 200px;
+  width: 900px;
+  background: black;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.tower {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 300px;
+}
+
+.disc {
+  height: 40px;
+  background: transparent;
+  border: none;
+  margin: 20px auto;
+}
+.selected {
+  background: #f50;
+  border-radius: 10px;
+}
+.disc-1, .disc-2, .disc-3 {
+  background-color: yellowgreen;
+  border-radius: 5px;
+}
+
+.disc-3 {
+  display: block;
+  width: 80%;
+}
+
+.disc-2 {
+  display: block;
+  width: 60%;
+}
+
+.disc-1 {
+  display: block;
+  width: 40%;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}

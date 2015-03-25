@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hanoi</title>
+    <link rel="stylesheet" type="text/css" href="../css/hanoi.css">
+    <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Whackjobs at GithubPages don't understand symlinks... -->
+    <script src="../hanoi-core.js"></script>
+    <script src="../js/hanoi-view.js"></script>
+
+    <h1 class="title">HAN.OI</h1>
+
+    <div class="hanoi clearfix">
+    </div>
+
+    <script>
+      var game = new window.Hanoi.Game();
+      var $hanoi = $('.hanoi');
+      var gameView = new window.Hanoi.View(game, $hanoi);
+      gameView.bindEvents();
+    </script>
+  </body>
+</html>
