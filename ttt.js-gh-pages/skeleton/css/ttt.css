@@ -1,0 +1,77 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  background: #eee;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.ttt {
+  margin: 20px auto;
+  width: 580px;
+  height: 580px;
+  border: 2px solid cornflowerblue;
+  font-family: 'Share Tech Mono';
+  user-select: none;
+}
+.row:last-child {
+  border-bottom: 10px solid cornflowerblue;
+}
+
+.row {
+  border-top: 10px solid cornflowerblue;
+  background: cornflowerblue;
+  width: 580px;
+  height: 180px;
+}
+
+.square {
+  /*margin-top: 10px;*/
+  margin-left: 10px;
+  background: thistle;
+  width: 180px;
+  height: 180px;
+  float: left;
+  transition: background-color .5s;
+  font-size: 200px;
+  text-align: center;
+  line-height: 143px;
+  cursor: default;
+}
+
+.square:last-child {
+  margin-right: 10px;
+}
+
+.ttt:not(.game-over) .square:not(.x):not(.o):hover {
+  background-color: salmon;
+  cursor: pointer;
+}
+
+.x {
+  background-color: rgb(179, 229, 219);
+  color: tomato;
+}
+
+.o {
+  background-color: rgb(125, 179, 168);
+  color: papayawhip;
+}
+
+.win-message {
+  margin: 20px auto;
+  /*width: 250px;*/
+  font-size: 48px;
+  font-family: 'Share Tech Mono';
+  color: cornflowerblue;
+  text-align: center;
+}

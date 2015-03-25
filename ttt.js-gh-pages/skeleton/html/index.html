@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="../css/ttt.css">
+    <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <script src="../js/jquery-2.1.1.js"></script>
+    <!-- Whackjobs at GithubPages don't understand symlinks... -->
+    <script src="../../ttt-core-solution/ttt-core.js"></script>
+    <script src="../js/ttt-view.js"></script>
+
+    <h1 class="win-message">Tic Tac Toe and stuff</h1>
+    <div class="ttt noselect clearfix">
+
+    </div>
+
+    <script>
+      var $ttt = $('.ttt');
+      var tttGame = new window.TTT.Game();
+      var gameView = new window.TTT.View(tttGame, $ttt);
+      gameView.setupBoard();
+      gameView.bindEvents();
+    </script>
+  </body>
+</html>
