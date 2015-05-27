@@ -5,8 +5,8 @@
   }
 
   var Board = window.SnakeGame.Board = function() {
-    this.width = 100;
-    this.height = 60;
+    this.width = 90;
+    this.height = 40;
     this.snake = new window.SnakeGame.Snake();
     this.apples = null;
   };
